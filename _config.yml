@@ -1,0 +1,23 @@
+
+title: Mohammed Ashad
+url: 'https://e-labInnovations.github.io'
+baseurl: '/e-labInnovations.github.io' #change it according to your repository name
+
+
+
+# Profile information
+yourname: Mohammed Ashad  ## put your name
+title: 'Electronics student with vs code editor'  ## your title
+location: Kerala, India
+
+
+## Social Profiles
+facebook: http://www.facebook.com  ## your facebook account url
+twitter: http://www.twitter.com  ## your twitter account url
+linkedin: http://www.linkedin.com  ## your linkedin account url
+dribbble: http://www.dribble.com  ## you dribbble account url
+foursquare: http://www.foursquare.com  ## your foursquare account url
+
+
+
+# Update all the sections by editing the files inside _includes folder.
