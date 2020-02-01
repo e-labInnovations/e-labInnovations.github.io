@@ -1097,7 +1097,7 @@ ul.about {
     }
 
     .widget-profil{ 	
-        height: 265px !important;
+        height: 310px !important;
         margin-bottom: 20px;
         float: none;
     }
@@ -1111,7 +1111,7 @@ ul.about {
 
 @media only screen  and (max-width: 766px) {
     .widget-profil{ 	
-        height: 285px !important;
+        height: 395px !important;
         margin-bottom: 20px;
         float: none;
     }
@@ -1134,7 +1134,7 @@ ul.about {
 
 @media only screen and (min-width : 766px) and (max-width: 800px) {
     .widget-profil{ 	
-        height: 210px !important;
+        height: 265px !important;
         margin-bottom: 20px;
         float: none;
     }
@@ -1153,7 +1153,7 @@ ul.about {
 @media only screen and (min-width : 800px) and (max-width : 991px) {
 
     .widget-profil{ 	
-        height: 210px !important;	
+        height: 265px !important;	
         margin-bottom: 20px;
         float: none;
     }
