@@ -1101,9 +1101,9 @@ ul.about {
         margin-bottom: 20px;
         float: none;
     }
-    #p_social {
+    /* #p_social {
         display: none;
-    }
+    } */
     #profile_desc {
         display:none;
     }
@@ -1115,9 +1115,9 @@ ul.about {
         margin-bottom: 20px;
         float: none;
     }
-    #p_social {
+    /* #p_social {
         display: none;
-    }
+    } */
     #profile_desc {
         display:none;
     }
@@ -1138,9 +1138,9 @@ ul.about {
         margin-bottom: 20px;
         float: none;
     }
-    #p_social {
+    /* #p_social {
         display: none;
-    }
+    } */
 }
 
 @media only screen and (min-width : 550px) and (max-width : 991px) {
@@ -1158,9 +1158,9 @@ ul.about {
         float: none;
     }
 
-    #p_social {
+    /* #p_social {
         display: none;
-    }
+    } */
     #profile_desc {
         border-bottom: 0 !important;
     }
