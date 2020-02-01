@@ -207,10 +207,10 @@ h2.resp-accordion:hover .hi-icon, .no-touch .hi-icon-effect-5 .hi-icon:hover {
     border-bottom: 1px solid #ffe7b1;
     border-top: 1px solid #ffe7b1;
 }
-#profile_social a:hover {
+#p_social a:hover {
     color : #FDB000;
 }
-#profile_social a{
+#p_social a{
     background-color: #FDB000;
 }
 #blog .post_media {

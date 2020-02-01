@@ -213,10 +213,10 @@ i.fa-quote-left {
     border-bottom: 1px solid #78c2ff;
     border-top: 1px solid #78c2ff;
 }
-#profile_social a:hover {
+#p_social a:hover {
     color : #0087F7;
 }
-#profile_social a{
+#p_social a{
     background-color: #0087F7;
 }
 #blog .post_media {

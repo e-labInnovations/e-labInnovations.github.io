@@ -210,10 +210,10 @@ h2.resp-accordion:hover .hi-icon,
     border-bottom: 1px solid #e0ff1b;
     border-top: 1px solid #e0ff1b;
 }
-#profile_social a:hover {
+#p_social a:hover {
     color : #B1CD00;
 }
-#profile_social a{
+#p_social a{
     background-color: #B1CD00;
 }
 #blog .post_media {
