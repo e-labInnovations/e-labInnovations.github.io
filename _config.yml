@@ -18,6 +18,7 @@ linkedin: https://www.linkedin.com/in/mohammed-ashad-525134176  ## your linkedin
 github: https://github.com/e-labInnovations ## you github account url
 instagram: https://www.instagram.com/mohammed_ashad_23/  ## your instagram account url
 
-
+plugins:
+  - jekyll-sitemap
 
 # Update all the sections by editing the files inside _includes folder.
