@@ -18,9 +18,9 @@ permalink: /:title/
 collections:
   authors:
     output: true
-paginate_path: "/page/:num/"
+paginate_path: '/page/:num/'
 show_get_theme_btn: true
-use_logo: false
+use_logo: true
 
 # Content paginator
 paginate_content:
@@ -29,8 +29,8 @@ paginate_content:
   collections:
     - posts
   auto: false
-  separator: "--page-break--"
-  permalink: "/:num/"
+  separator: '--page-break--'
+  permalink: '/:num/'
   seo_canonical: true
   properties:
     part:
@@ -50,17 +50,18 @@ plugins:
   - jekyll-paginate-content
 
 # Exclude my node related stuff
-exclude: [
-  'package.json',
-  'package-lock.json',
-  'src',
-  'node_modules',
-  'initpost.sh',
-  'Gemfile',
-  'Gemfile.lock',
-  'gulpfile.js',
-  'README.md'
-]
+exclude:
+  [
+    'package.json',
+    'package-lock.json',
+    'src',
+    'node_modules',
+    'initpost.sh',
+    'Gemfile',
+    'Gemfile.lock',
+    'gulpfile.js',
+    'README.md',
+  ]
 
 # Theme
 version: v3.0.2

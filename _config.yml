@@ -1,14 +1,14 @@
 # Site Settings
-name: Jekflix
-title: Jekflix | A blog theme for Jekyll
-description: Jekflix is a template for Jekyll inspired by Netflix and made by Thiago Rossener.
+name: e-lab innovations
+title: e-lab innovations | Learn | Innovate | Share
+description: e-lab innovations blog
 tags:
+  - e-lab
+  - innovations
   - blog
-  - template
-  - jekyll
-  - theme
-  - netlify
-email: youremail@xyz.com
+  - e-labinnovations
+  - Mohammed Ashad
+email: elabinnovations@gmail.com
 disqus_username: disqus_username
 show_hero: true
 menu:
@@ -24,12 +24,12 @@ menu:
 
 # Social Media Settings
 # Remove the item if you don't need it
-github_username: github_username
-facebook_username: facebook_username
-twitter_username: twitter_username
-instagram_username: instagram_username
-linkedin_username: linkedin_username
-medium_username: medium_username
+github_username: e-labinnovations
+facebook_username: elabin
+twitter_username:
+instagram_username: mohammed_ashad_23
+linkedin_username: mohammed-ashad-525134176
+medium_username: mohammedashad23
 
 
 # Posts Settings
@@ -55,9 +55,9 @@ permalink: /:title/
 collections:
   authors:
     output: true
-paginate_path: "/page/:num/"
+paginate_path: '/page/:num/'
 show_get_theme_btn: true
-use_logo: false
+use_logo: true
 
 # Content paginator
 paginate_content:
@@ -66,8 +66,8 @@ paginate_content:
   collections:
     - posts
   auto: false
-  separator: "--page-break--"
-  permalink: "/:num/"
+  separator: '--page-break--'
+  permalink: '/:num/'
   seo_canonical: true
   properties:
     part:
@@ -87,17 +87,18 @@ plugins:
   - jekyll-paginate-content
 
 # Exclude my node related stuff
-exclude: [
-  'package.json',
-  'package-lock.json',
-  'src',
-  'node_modules',
-  'initpost.sh',
-  'Gemfile',
-  'Gemfile.lock',
-  'gulpfile.js',
-  'README.md'
-]
+exclude:
+  [
+    'package.json',
+    'package-lock.json',
+    'src',
+    'node_modules',
+    'initpost.sh',
+    'Gemfile',
+    'Gemfile.lock',
+    'gulpfile.js',
+    'README.md',
+  ]
 
 # Theme
 version: v3.0.2

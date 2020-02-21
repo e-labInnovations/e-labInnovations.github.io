@@ -1,13 +1,13 @@
-name: Jekflix
-title: Jekflix | A blog theme for Jekyll
-description: Jekflix is a template for Jekyll inspired by Netflix and made by Thiago Rossener.
+name: e-lab innovations
+title: e-lab innovations | Learn | Innovate | Share
+description: e-lab innovations blog
 tags:
+  - e-lab
+  - innovations
   - blog
-  - template
-  - jekyll
-  - theme
-  - netlify
-email: youremail@xyz.com
+  - e-labinnovations
+  - Mohammed Ashad
+email: elabinnovations@gmail.com
 disqus_username: disqus_username
 show_hero: true
 menu:
