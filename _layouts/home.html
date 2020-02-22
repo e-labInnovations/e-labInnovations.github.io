@@ -23,20 +23,18 @@ layout: main
             <div class="gradient"></div>
             <div class="content">
                 <time datetime="{{ featured.date | date_to_xmlschema }}" class="date">
-                    {% if site.date_format == nil %}
-                        {{ featured.date | date: "%m.%d.%Y" }}
-                    {% else %}
-                        {{ featured.date | date: site.date_format }}
-                    {% endif %}
+                    From Mohammed Ashad
                 </time>
-                <h1 class="title">{{ featured.title }}</h1>
-                <p class="description">{{ featured.subtitle }}</p>
+                <h1 class="title">Welcome to <br /> e-lab innovations</h1>
+                <p class="description">Learn | Innovate | Share</p>
+                <!--
                 <div class="buttons">
                     <a href="{{ featured.url }}" role="button" class="button">
                         <svg><use xlink:href="#icon-read"></use></svg>
                         <span>{{ site.translations.button.read_now | default: "Read Now" }}</span>
                     </a>
                 </div>
+                -->
             </div>
         </section>
     {% endif %}
