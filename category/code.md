@@ -1,6 +1,6 @@
 ---
 layout: category
-title: Code
-slug: code
-description: A category for code related posts.
+title: GAS
+slug: gas
+description: A category for Google Apps Script related posts.
 ---
