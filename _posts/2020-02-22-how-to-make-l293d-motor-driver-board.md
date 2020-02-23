@@ -94,3 +94,14 @@ After soldering all components
 
 ## Using with Arduino
 ### Circuit diagram
+
+### Connections
+| Motor driver module | Arduino |
+|---------------------|---------|
+| input 1 | D3 |
+| input 2 | D4 |
+| input 3 | D5 |
+| input 4 | D6 |
+
+### Code
+
