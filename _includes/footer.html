@@ -79,28 +79,7 @@
 </script>
 
 
-<script>
-    if ("serviceWorker" in navigator) {
-      if (navigator.serviceWorker.controller) {
-        console.log("An active service worker found, no need to register");
-      } else {
-        // Register the service worker
-        navigator.serviceWorker
-          .register("/serviceworker.js", {
-            scope: "./"
-          })
-          .then(function (reg) {
-            console.log("Service worker has been registered for scope: " + reg.scope);
-          })
-          .catch(error => {
-            console.log("Service worker error");
-            console.log(error);
-          });
-      }
-    } else {
-        alert("Service worker not working")
-    }
-</script>
+<script src="./assets/js/pwa-script.js"></script>
 
 <!-- Include the script that allows Netlify CMS login -->
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
