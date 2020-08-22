@@ -36,6 +36,24 @@ In my case, I am using a Nokia 1208 display.
 * Jumper wires
 * 9v power supply
 
+**Notes**
+
+* Connect +Vled to +9V and -Vled to GND
+* All communication lines use 3.3v logic level. So use a Level shifter
+* These displays are 9bit SPI protocol, so we need a [Library ](https://github.com/kr4fty/ST7628-Nokia-1600-LCD-Library)for interfacing with Arduino.
+
+**Step 1: LCD Connector and Breakout Board**
+
+Solder the display connector in 10 Pin SMD to DIP converter board.
+
+![SMD to DIP Breakout board](/assets/img/uploads/breakout-board.jpg "SMD to DIP Breakout board")
+
+![](/assets/img/uploads/breakout-board-with-connector.png)
+
+![](/assets/img/uploads/lcd-connected-with-bb.png)
+
+**Step 2: Electrical Interfacing**
+
 **Pinout**
 
 ```
@@ -55,17 +73,3 @@ In my case, I am using a Nokia 1208 display.
                                  |+----------------------+|
                                  +------------------------+
 ```
-
-**Notes**
-
-* Connect +Vled to +9V and -Vled to GND
-* All communication lines use 3.3v logic level. So use a Level shifter
-* These displays are 9bit SPI protocol, so we need a [Library ](https://github.com/kr4fty/ST7628-Nokia-1600-LCD-Library)for interfacing with Arduino.
-
-Solder the display connector in 10 Pin SMD to DIP converter board.
-
-![SMD to DIP Breakout board](/assets/img/uploads/breakout-board.jpg "SMD to DIP Breakout board")
-
-![](/assets/img/uploads/breakout-board-with-connector.png)
-
-![](/assets/img/uploads/lcd-connected-with-bb.png)
