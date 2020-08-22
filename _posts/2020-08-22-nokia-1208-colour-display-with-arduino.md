@@ -73,3 +73,9 @@ Solder the display connector in 10 Pin SMD to DIP converter board.
                                  |+----------------------+|
                                  +------------------------+
 ```
+
+**Sample Working**
+
+<iframe width="100%"
+src="https://www.youtube.com/watch?v=NtRfAeXa4wY">
+</iframe>
