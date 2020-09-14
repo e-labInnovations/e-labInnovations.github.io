@@ -7,8 +7,7 @@ tags:
   - blog
   - e-labinnovations
   - Mohammed Ashad
-email: elabinnovations@gmail.com
-disqus_username: e-labinnovations
+  - മുഹമ്മദ് അഷ്ഹദ്
 show_hero: true
 menu:
   - title: Home
@@ -19,3 +18,5 @@ menu:
     url: /contact
   - title: Feed
     url: /feed.xml
+email: elabinnovations@gmail.com
+disqus_username: e-labinnovations
