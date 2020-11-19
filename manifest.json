@@ -50,5 +50,6 @@
   "background_color": "#141414",
   "start_url": "https://e-labinnovations.github.io/",
   "display": "standalone",
-  "orientation": "natural"
+  "orientation": "natural",
+  "gcm_sender_id": "185397314105"
 }
