@@ -10,6 +10,22 @@ if ("serviceWorker" in navigator) {
           .then(function (reg) {
             messaging.useServiceWorker(reg);
             console.log("Service worker has been registered for scope: " + reg.scope);
+              
+            messaging
+              .requestPermission()
+              .then(() => {
+                //message.innerHTML = "Notifications allowed";
+                console.log("Notifications allowed");
+                return messaging.getToken();
+              })
+              .then(token => {
+                //tokenString.innerHTML = "Token Is : " + token;
+                console.log("Token Is : " + token);
+              })
+              .catch(err => {
+                //errorMessage.innerHTML = errorMessage.innerHTML + "; " + err;
+                console.log("No permission to send push", err);
+              });
           })
           .catch(error => {
             console.log("Service worker error");
