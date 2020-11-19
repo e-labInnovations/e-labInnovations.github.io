@@ -8,6 +8,7 @@ if ("serviceWorker" in navigator) {
             scope: "./"
           })
           .then(function (reg) {
+            messaging.useServiceWorker(reg);
             console.log("Service worker has been registered for scope: " + reg.scope);
           })
           .catch(error => {
