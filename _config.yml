@@ -27,7 +27,7 @@ menu:
 github_username: e-labinnovations
 facebook_username: elabin
 twitter_username:
-instagram_username: mohammed_ashad_23
+instagram_username: elab_innovvations
 linkedin_username: mohammed-ashad-525134176
 medium_username: mohammedashad23
 
@@ -40,8 +40,8 @@ two_columns_layout: true
 
 
 # Advanced Settings
-baseurl: '' # the subpath of your site, e.g. /blog
-url: '' # the base hostname & protocol for your site
+baseurl: '/' # the subpath of your site, e.g. /blog
+url: 'https://e-labinnovations.github.io/' # the base hostname & protocol for your site
 google_analytics: 'UA-145449081-1'
 language: 'en'
 categories_folder: category
