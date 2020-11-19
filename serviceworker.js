@@ -13,19 +13,14 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 const messaging = firebase.messaging();
-messaging.setBackgroundMessageHandler(payload => {
-  const notification = JSON.parse(payload.data.notification);
-  const notificationTitle = notification.title;
-  const notificationOptions = {
-    body: notification.body
-  };
-  //Show the notification :)
-  return self.registration.showNotification(
-    notificationTitle,
-    notificationOptions
-  );
-});
 
+self.addEventListener('notificationclick', event => {
+    event.notification.close()
+
+    event.waitUntil(
+        self.clients.openWindow('https://artofmyself.com')
+    )
+})
 
 const CACHE = "pwabuilder-offline";
 
