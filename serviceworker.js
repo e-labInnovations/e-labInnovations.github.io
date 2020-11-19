@@ -1,3 +1,31 @@
+importScripts('https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js');
+importScripts('https://www.gstatic.com/firebasejs/8.0.2/firebase-messaging.js');
+
+var firebaseConfig = {
+    apiKey: "AIzaSyDrxtvPCMVHyVKsik8uvyIo64s28heyr3Q",
+    authDomain: "e-lab-innovations.firebaseapp.com",
+    databaseURL: "https://e-lab-innovations.firebaseio.com",
+    projectId: "e-lab-innovations",
+    storageBucket: "e-lab-innovations.appspot.com",
+    messagingSenderId: "185397314105",
+    appId: "1:185397314105:web:1fae2925feb2850a2e43e8"
+  };
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+messaging.setBackgroundMessageHandler(payload => {
+  const notification = JSON.parse(payload.data.notification);
+  const notificationTitle = notification.title;
+  const notificationOptions = {
+    body: notification.body
+  };
+  //Show the notification :)
+  return self.registration.showNotification(
+    notificationTitle,
+    notificationOptions
+  );
+});
+
+
 const CACHE = "pwabuilder-offline";
 
 const offlineFallbackPage = ["./index.html","./assets/css/styles.css","./assets/img/logo.png","./assets/img/pixels.png"];
@@ -26,7 +54,7 @@ self.addEventListener("fetch", function (event) {
   event.respondWith(
     fetch(event.request)
       .then(function (response) {
-        console.log("Add page to offline cache: " + response.url);
+        //console.log("Add page to offline cache: " + response.url);
 
         // If request was success, add or update it in the cache
         event.waitUntil(updateCache(event.request, response.clone()));
