@@ -511,5 +511,9 @@ collections:
             name: "sent_message_url"
             hint: "URL where the user will be redirected for after submit the contact form. Ex: /contact/message-sent/"
             required: false
+          - label: "Contact Action URL"
+            name: "sent_message_action_url"
+            hint: "URL for submitting the form. The curresponding server can accept POST request. Ex: https://formspree.io/elabinnovations@gmail.com"
+            required: false
 
 

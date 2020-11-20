@@ -4,3 +4,4 @@ google_analytics: UA-145449081-1
 language: en
 categories_folder: category
 sent_message_url: /contact/message-sent/
+sent_message_action_url: https://formspree.io/elabinnovations
