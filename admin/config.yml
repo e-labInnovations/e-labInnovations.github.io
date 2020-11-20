@@ -194,7 +194,7 @@ collections:
     files:
       - label: "Site"
         name: "site"
-        file: "_config.yml"
+        file: "src/yml/site.yml"
         fields:
           - label: "Name"
             name: "name"
@@ -249,7 +249,7 @@ collections:
             required: false
       - label: "Social"
         name: "social"
-        file: "_config.yml"
+        file: "src/yml/social.yml"
         fields:
           - label: "GitHub Username"
             name: "github_username"
@@ -277,7 +277,7 @@ collections:
             required: false
       - label: "Theme"
         name: "theme"
-        file: "_config.yml"
+        file: "src/yml/theme.yml"
         fields:
           - label: "Theme Color"
             name: "themeColor"
@@ -301,7 +301,7 @@ collections:
             default: "#333333"
       - label: "Posts"
         name: "posts"
-        file: "_config.yml"
+        file: "src/yml/posts.yml"
         fields:
           - label: "Show time bar in posts"
             name: "show_time_bar"
@@ -321,7 +321,7 @@ collections:
             default: true
       - label: "Translations"
         name: "translations"
-        file: "_config.yml"
+        file: "src/yml/translations.yml"
         fields:
           - label: "Texts"
             name: "texts"
@@ -488,7 +488,7 @@ collections:
                     required: false
       - label: "Advanced"
         name: "advanced"
-        file: "_config.yml"
+        file: "src/yml/advanced.yml"
         fields:
           - label: "Base URL"
             name: "baseurl"
