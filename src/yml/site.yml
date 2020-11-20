@@ -9,6 +9,7 @@ tags:
   - Mohammed Ashad
   - മുഹമ്മദ് അഷ്ഹദ്
 show_hero: true
+show_main_modal: true
 menu:
   - title: Home
     url: /

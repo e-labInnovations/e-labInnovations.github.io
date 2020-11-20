@@ -214,6 +214,10 @@ collections:
             name: "show_hero"
             widget: "boolean"
             default: true
+          - label: "Show Main Modal"
+            name: "show_main_modal"
+            widget: "boolean"
+            default: true
           - label: "Posts per page"
             name: "paginate"
             widget: "number"
