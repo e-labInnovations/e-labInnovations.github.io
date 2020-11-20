@@ -39,6 +39,10 @@ window.addEventListener('load', () => {
  } else {
        alert("Service worker not working")
  }
+ 
+ initializePush();
+ if (!isSubscribed)
+    subscribeUser()
 });
 
 

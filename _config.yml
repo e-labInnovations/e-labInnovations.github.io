@@ -34,9 +34,9 @@ medium_username: mohammedashad23
 
 # Posts Settings
 show_time_bar: true
-show_modal_on_exit: false
+show_modal_on_exit: true
 show_modal_on_finish_post: false
-two_columns_layout: true
+two_columns_layout: false
 
 
 # Advanced Settings
