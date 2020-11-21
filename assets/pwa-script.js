@@ -87,28 +87,28 @@ function subscribeUser() {
 
 function updateSubscriptionOnServer(token) {
     if (isSubscribed) {
-//         return database.ref('device_ids')
-//                 .equalTo(token)
-//                 .on('child_added', snapshot => snapshot.ref.remove())
+        return axios.post('https://script.google.com/macros/s/AKfycby3wkwLKaCbQZmMbrwZzC8hEMbEDKbfR9WF_ufD2sXG9fk0FTS4/exec', {
+            action: 'Unsubscribe',
+            token: token
+        })
+        .then(function (response) {
+            localStorage.setItem('subscribed', true)
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
     }
 
-//     database.ref('device_ids').once('value')
-//         .then(snapshots => {
-//             let deviceExists = false
-
-//             snapshots.forEach(childSnapshot => {
-//                 if (childSnapshot.val() === token) {
-//                     deviceExists = true
-//                     return console.log('Device already registered.');
-//                 }
-
-//             })
-
-//             if (!deviceExists) {
-//                 console.log('Device subscribed');
-//                 return database.ref('device_ids').push(token)
-//             }
-//         })
+    axios.post('https://script.google.com/macros/s/AKfycby3wkwLKaCbQZmMbrwZzC8hEMbEDKbfR9WF_ufD2sXG9fk0FTS4/exec', {
+        action: 'Subscribe',
+        token: token
+    })
+    .then(function (response) {
+        localStorage.setItem('subscribed', false)
+    })
+    .catch(function (error) {
+        console.log(error);
+    });
 }
 
 function unsubscribeUser() {
