@@ -1,8 +1,18 @@
+---
+layout: null
+---
 {
   "lang": "en",
   "dir": "ltr\rtl",
-  "name": "e-lab innovations",
-  "short_name": "e-lab innovations",
+  "name": {{ site.title | jsonify }},
+  "short_name": {{ site.name | jsonify }},
+  "theme_color": "#000000",
+  "background_color": "#141414",
+  "start_url": "https://e-labinnovations.github.io/",
+  "display": "standalone",
+  "orientation": "natural",
+  "gcm_sender_id": "185397314105",
+  "categories": ["e-labinnovations", "e-lab", "innovations", "Mohammed", "Ashad", "Arduino", "Electronics"],
   "icons": [
     {
       "src": "\/assets\/img\/icons\/apple-icon-72x72.png",
@@ -46,10 +56,30 @@
       "type": "image\/png"
     }
   ],
-  "theme_color": "#000000",
-  "background_color": "#141414",
-  "start_url": "https://e-labinnovations.github.io/",
-  "display": "standalone",
-  "orientation": "natural",
-  "gcm_sender_id": "185397314105"
+  "screenshots" : [
+    {
+      "src": "/assets/img/screenshots/ss1.jpg",
+      "sizes": "720x1280",
+      "type": "image/jpg"
+    },
+    {
+      "src": "assets/img/images/screenshots/ss2.jpg",
+      "sizes": "720x1280",
+      "type": "image/jpg"
+    },
+    {
+      "src": "assets/img/images/screenshots/ss3.jpg",
+      "sizes": "720x1280",
+      "type": "image/jpg"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "About",
+      "short_name": "About",
+      "description": "Add me",
+      "url": "/about",
+      "icons": [{ "src": "/assets/img/uploads/profile_circle.png", "sizes": "361x361" }]
+    }
+  ]
 }

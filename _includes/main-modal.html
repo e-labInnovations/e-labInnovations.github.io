@@ -1,4 +1,4 @@
-<div class="modal{% if include.showOnExit %} exit{% endif %}{% if include.closed %} closed{% endif %}">
+<div id="mainModal" class="modal{% if include.showOnExit %} exit{% endif %}{% if include.closed %} closed{% endif %}">
     <div class="window">
         <svg class="close">
             <use xlink:href="#icon-close"></use>
@@ -26,7 +26,8 @@
 
 <script>
   let showMainModal = sessionStorage.getItem("showMainModal")==="false"?false:true;
+  sessionStorage.seItem("showMainModal", true)
   if(!showMainModal) {
-    document.querySelector(".modal").classList.add("close");
+    document.querySelector("#mainModal").classList.add("close");
   }
 </script>
