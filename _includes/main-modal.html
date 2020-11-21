@@ -23,3 +23,10 @@
     </div>
     <div class="mask"></div>
 </div>
+
+<script>
+  let showMainModal = sessionStorage.getItem("showMainModal")==="false"?false:true;
+  if(!showMainModal) {
+    document.querySelector(".modal").classList.add("close");
+  }
+</script>
