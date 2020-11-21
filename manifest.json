@@ -14,12 +14,73 @@ layout: null
   "gcm_sender_id": "185397314105",
   "categories": ["e-labinnovations", "e-lab", "innovations", "Mohammed", "Ashad", "Arduino", "Electronics"],
   "icons": [
-    {      "short_name": {{ post.title | jsonify }},
+    {
+      "src": "\/assets\/img\/icons\/apple-icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image\/png"
+    },{
+      "src": "\/assets\/img\/icons\/apple-touch-icon-114x114.png",
+      "sizes": "114x114",
+      "type": "image\/png"
+    },{
+      "src": "\/assets\/img\/icons\/apple-touch-icon-120x120.png",
+      "sizes": "120x120",
+      "type": "image\/png"
+    },{
+      "src": "\/assets\/img\/icons\/apple-touch-icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image\/png"
+    },{
+      "src": "\/assets\/img\/icons\/apple-touch-icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image\/png"
+    },{
+      "src": "\/assets\/img\/icons\/apple-touch-icon.png",
+      "sizes": "57x57",
+      "type": "image\/png"
+    },{
+      "src": "\/assets\/img\/icons\/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image\/png"
+    },{
+      "src": "\/assets\/img\/icons\/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image\/png"
+    },{
+      "src": "\/assets\/img\/icons\/favicon-64x64.png",
+      "sizes": "64x64",
+      "type": "image\/png"
+    },{
+      "src": "\/assets\/img\/icons\/apple-touch-icon-60x60.png",
+      "sizes": "60x60",
+      "type": "image\/png"
+    }
+  ],
+  "screenshots" : [
+    {
+      "src": "/assets/img/screenshots/ss1.jpg",
+      "sizes": "720x1280",
+      "type": "image/jpg"
+    },
+    {
+      "src": "assets/img/img/screenshots/ss2.jpg",
+      "sizes": "720x1280",
+      "type": "image/jpg"
+    },
+    {
+      "src": "assets/img/img/screenshots/ss3.jpg",
+      "sizes": "720x1280",
+      "type": "image/jpg"
+    }
+  ],
+  "shortcuts": [
+  {% for post in site.posts limit:3 %}
+    { "name": {{ post.title | jsonify }},
       "short_name": {{ post.title | jsonify }},
       "description": {{ post.title | jsonify | truncatewords:10 }},
       "url": {{ post.url | prepend: site.baseurl | jsonify }},
       "icons": [{ "src": "/assets/img/uploads/profile_circle.png", "sizes": "361x361" }]
-    }
+    },
   {% endfor %}
     {
       "name": "About",
@@ -27,6 +88,6 @@ layout: null
       "description": "Add me",
       "url": "/about",
       "icons": [{ "src": "/assets/img/uploads/profile_circle.png", "sizes": "361x361" }]
-    },
+    }
   ]
 }
