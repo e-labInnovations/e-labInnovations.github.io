@@ -2,7 +2,7 @@
 layout: null
 ---
 {
-  "lang": "en",
+  "lang": {{ site.language | jsonify }},
   "dir": "ltr\rtl",
   "name": {{ site.title | jsonify }},
   "short_name": {{ site.name | jsonify }},
@@ -77,7 +77,7 @@ layout: null
   {% for post in site.posts limit:3 %}
     { "name": {{ post.title | jsonify }},
       "short_name": {{ post.title | jsonify }},
-      "description": {{ post.body | jsonify | truncatewords:10 }},
+      "description": {{ post.title | jsonify | truncatewords:10 }},
       "url": {{ post.url | prepend: site.baseurl | jsonify }},
       "icons": [{ "src": "/assets/img/uploads/profile_circle.png", "sizes": "361x361" }]
     },
