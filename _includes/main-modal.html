@@ -26,7 +26,7 @@
 
 <script>
   let showMainModal = sessionStorage.getItem("showMainModal")==="false"?false:true;
-  sessionStorage.seItem("showMainModal", true)
+  sessionStorage.setItem("showMainModal", true)
   if(!showMainModal) {
     document.querySelector("#mainModal").classList.add("close");
   }
