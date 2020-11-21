@@ -3,7 +3,7 @@ layout: page
 menu: true
 date: 2020-11-17 09:41:11
 title: Walleto - Privacy Policy
-permalink: /{{slug}}/
+permalink: /walleto-privacy-policy/
 ---
 <mailto:elabinnovations@gmail.com>**Privacy Policy**
 
