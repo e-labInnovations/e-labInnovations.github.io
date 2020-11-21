@@ -5,7 +5,7 @@ date: 2020-11-17 09:41:11
 title: Walleto - Privacy Policy
 permalink: /{{slug}}/
 ---
-**Privacy Policy**
+<mailto:elabinnovations@gmail.com>**Privacy Policy**
 
 Mohammed Ashad built the Walleto app as a Free app. This SERVICE is provided by Mohammed Ashad at no cost and is intended for use as is.
 
