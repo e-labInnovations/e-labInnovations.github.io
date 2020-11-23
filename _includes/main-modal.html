@@ -16,13 +16,11 @@
                 <li><b>Wash</b> hands often</li>
                 <li><b>COVER</b> your cough</li>
             </ol>
-            {{ site.pages[0].url }}
-            <br />
-            test2
-            <br />
             {% assign mm = site.pages | where: "title", "About" | first %}
             <br />
               {{ mm.content }}
+            <br />
+            {{ mm.url }}
             <br />
             <a href='https://pngtree.com/so/corona-cartoon'><sup>corona cartoon png from pngtree.com</sup></a>
         </div>
