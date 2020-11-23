@@ -17,7 +17,10 @@
                 <li><b>COVER</b> your cough</li>
             </ol>
             
-            {% markdown main-modal.md %}
+            {% assign main-modalFile = site.contents | where: "name", "main-modal" | first %}
+            {% if main-modalFile %}
+              {% main-modalFile.name %}
+            {% endif %}
             <a href='https://pngtree.com/so/corona-cartoon'><sup>corona cartoon png from pngtree.com</sup></a>
         </div>
     </div>
