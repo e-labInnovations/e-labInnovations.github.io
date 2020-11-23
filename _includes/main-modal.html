@@ -16,9 +16,12 @@
                 <li><b>Wash</b> hands often</li>
                 <li><b>COVER</b> your cough</li>
             </ol>
-            {{ site.pages[0].title }}
+            {{ site.pages[0].slug }}
             <br />
-            {% assign mm = site.pages["about"] %}
+            test2
+            <br />
+            {% assign mm = site.pages | where: "slug", "about" | first %}
+            <br />
               <a href="{{ mm.permalink }}">{{ mm.title }}</a>
             
             <a href='https://pngtree.com/so/corona-cartoon'><sup>corona cartoon png from pngtree.com</sup></a>
