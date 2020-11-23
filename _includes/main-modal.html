@@ -22,8 +22,8 @@
             <br />
             {% assign mm = site.pages | where: "title", "About" | first %}
             <br />
-              <a href="{{ mm.permalink }}">{{ mm.title }}</a>
-            
+              {{ mm.content }}
+            <br />
             <a href='https://pngtree.com/so/corona-cartoon'><sup>corona cartoon png from pngtree.com</sup></a>
         </div>
     </div>
