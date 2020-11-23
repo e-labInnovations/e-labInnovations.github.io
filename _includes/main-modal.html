@@ -17,9 +17,9 @@
                 <li><b>COVER</b> your cough</li>
             </ol>
             
-            {% assign main-modalFile = site.pages | where: "title", "About" %}
-            {% if main-modalFile %}
-              {% main-modalFile.title %}
+            {% assign page = site.pages | find: "title", "About" %}
+            {% if page %}
+              {{ page.title }}
             {% endif %}
             <a href='https://pngtree.com/so/corona-cartoon'><sup>corona cartoon png from pngtree.com</sup></a>
         </div>
