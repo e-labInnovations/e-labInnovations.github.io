@@ -16,12 +16,6 @@
                 <li><b>Wash</b> hands often</li>
                 <li><b>COVER</b> your cough</li>
             </ol>
-            {% assign mm = site.pages | where: "permalink", site.main-modal-page | first %}
-            <br />
-              {{ mm.content }}
-            <br />
-            {{ mm.url }}
-            <br />
             <a href='https://pngtree.com/so/corona-cartoon'><sup>corona cartoon png from pngtree.com</sup></a>
         </div>
     </div>
@@ -32,6 +26,6 @@
   let showMainModal = sessionStorage.getItem("showMainModal")==="false"?false:true;
   sessionStorage.setItem("showMainModal", false);
   if(!showMainModal) {
-    document.querySelector("#mainModal").classList.add("close");
+    document.querySelector("#mainModal").classList.add("closed");
   }
 </script>
