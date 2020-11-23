@@ -16,11 +16,11 @@
                 <li><b>Wash</b> hands often</li>
                 <li><b>COVER</b> your cough</li>
             </ol>
-            {{ site.pages[0].slug }}
+            {{ site.pages[0].url }}
             <br />
             test2
             <br />
-            {% assign mm = site.pages | where: "slug", "about" | first %}
+            {% assign mm = site.pages | where: "title", "About" | first %}
             <br />
               <a href="{{ mm.permalink }}">{{ mm.title }}</a>
             
@@ -34,6 +34,6 @@
   let showMainModal = sessionStorage.getItem("showMainModal")==="false"?false:true;
   sessionStorage.setItem("showMainModal", false);
   if(!showMainModal) {
-    document.querySelector("#mainModal").classList.add("closed");
+    document.querySelector("#mainModal").classList.add("close");
   }
 </script>
