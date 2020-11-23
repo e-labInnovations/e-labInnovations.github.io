@@ -16,7 +16,7 @@
                 <li><b>Wash</b> hands often</li>
                 <li><b>COVER</b> your cough</li>
             </ol>
-            {% assign mm = site.pages | where: "title", "About" | first %}
+            {% assign mm = site.pages | where: "url", site.main-modal-page | first %}
             <br />
               {{ mm.content }}
             <br />

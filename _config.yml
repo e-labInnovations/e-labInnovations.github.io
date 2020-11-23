@@ -12,7 +12,7 @@ email: elabinnovations@gmail.com
 disqus_username: e-labinnovations
 show_hero: true
 show_main_modal: true
-main_modal_page: main-modal
+main_modal_page: /main-modal/
 menu:
   - title: Home
     url: /
