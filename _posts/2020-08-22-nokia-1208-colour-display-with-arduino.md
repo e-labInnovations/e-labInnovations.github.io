@@ -74,6 +74,41 @@ Solder the display connector in 10 Pin SMD to DIP converter board.
                                  +------------------------+
 ```
 
+**Wiring/Circuit Diagram**
+
+![Arduino Nokia 1208 Display Interfacing](/assets/img/uploads/schematic_arduino-nokia-1208_2021-02-04.png)
+
+###### **Code**
+
+```cpp
+#include <Adafruit_GFX.h>    // Core graphics library
+#include <ST7628.h> // Hardware-specific library
+
+#define TFT_CS     5
+#define TFT_RST    6 // you can also connect this to the Arduino reset, in which case, set this #define pin to 0!
+#define TFT_SCLK   7 // set these to be whatever pins you like!
+#define TFT_MOSI   8 // set these to be whatever pins you like!
+ST7628 tft = ST7628(TFT_CS, TFT_MOSI, TFT_SCLK, TFT_RST);
+
+unsigned int i;
+
+void setup() {
+  tft.init();   // initialize a ST7628 chip
+  tft.fillScreen(ST7628_BLACK);
+  tft.drawRGBBitmap(0,0, cblossomCBM, 64, 64);
+  delay(3000);
+  tft.fillScreen(ST7628_BLACK);
+  
+  tft.setCursor(0, 60);
+  tft.setTextColor(ST7628_BLUE);
+  tft.setTextWrap(true);
+  tft.print("Test");
+}
+
+void loop() {
+}
+```
+
 **Sample Working**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NtRfAeXa4wY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
