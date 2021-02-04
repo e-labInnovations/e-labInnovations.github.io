@@ -90,8 +90,6 @@ Solder the display connector in 10 Pin SMD to DIP converter board.
 #define TFT_MOSI   8 // set these to be whatever pins you like!
 ST7628 tft = ST7628(TFT_CS, TFT_MOSI, TFT_SCLK, TFT_RST);
 
-unsigned int i;
-
 void setup() {
   tft.init();   // initialize a ST7628 chip
   tft.fillScreen(ST7628_BLACK);
@@ -102,7 +100,7 @@ void setup() {
   tft.setCursor(0, 60);
   tft.setTextColor(ST7628_BLUE);
   tft.setTextWrap(true);
-  tft.print("Test");
+  tft.print("Hello World!");
 }
 
 void loop() {
