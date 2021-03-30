@@ -1,7 +1,7 @@
 # Site Settings
 name: e-lab innovations
-title: e-lab innovations | Learn | Innovate | Share
-description: e-lab innovations blog
+title: e-lab innovations
+description: Learn | Innovate | Share
 tags:
   - e-lab
   - innovations
@@ -42,7 +42,7 @@ two_columns_layout: false
 
 # Advanced Settings
 baseurl: '/' # the subpath of your site, e.g. /blog
-url: 'https://e-labinnovations.github.io' # the base hostname & protocol for your site
+url: 'https://elabins.com' # the base hostname & protocol for your site
 google_analytics: 'UA-145449081-1'
 language: 'en'
 categories_folder: category

@@ -8,11 +8,11 @@ layout: null
   "short_name": {{ site.name | jsonify }},
   "theme_color": "#000000",
   "background_color": "#141414",
-  "start_url": "https://e-labinnovations.github.io/",
+  "start_url": "https://elabins.com/",
   "display": "standalone",
   "orientation": "natural",
   "gcm_sender_id": "185397314105",
-  "categories": ["e-labinnovations", "e-lab", "innovations", "Mohammed", "Ashad", "Arduino", "Electronics"],
+  "categories": ["elabins, elabins.com, e-labinnovations", "e-lab", "innovations", "Mohammed", "Ashad", "Arduino", "Electronics"],
   "icons": [
     {
       "src": "\/assets\/img\/icons\/apple-icon-72x72.png",
