@@ -12,7 +12,7 @@ layout: null
   "display": "standalone",
   "orientation": "natural",
   "gcm_sender_id": "185397314105",
-  "categories": ["education, productivity, elabins, elabins.com, e-labinnovations", "e-lab", "innovations", "Mohammed", "Ashad", "Arduino", "Electronics"],
+  "categories": ["education", "productivity", "Electronics"],
   "icons": [
     {
       "src": "\/assets\/img\/icons\/apple-icon-72x72.png",
@@ -61,7 +61,8 @@ layout: null
     },{
       "src": "\/assets\/img\/icons\/logo-512x512-maskable.png",
       "sizes": "512x512",
-      "type": "image\/png"
+      "type": "image\/png",
+      "purpose": "maskable"
     }
   ],
   "screenshots" : [
