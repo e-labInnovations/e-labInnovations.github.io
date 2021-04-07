@@ -5,18 +5,16 @@
 <!--</div>-->
 
 <div class="container">
-  <div id="form" class="contact-form">
-    <form accept-charset="UTF-8" method="POST" action="{{ site.sent_message_action_url }}" v-on:submit.prevent="validateBeforeSubmit" ref="contact">
-      <fieldset>
+  <div class="contact-form">
+    <fieldset>
         <input type="text" name="email" placeholder="{{ site.translations.contact.placeholders.email | default: 'Your email' }}" v-validate="'required|email'"
                :class="{ 'has-error': errors.has('email') }">
         <span v-if="errors.has('email')" v-cloak>${ errors.first('email') }</span>
 
         <span v-if="errors.has('message')" v-cloak>${ errors.first('message') }</span>
 
-        <button type="submit">{{ site.translations.contact.submit_btn | default:  "Send" }}</button>
+        <button type="submit" id="push-button" disabled>Subscribe</button>
       </fieldset>
-    </form>
   </div>
 
 </div>
