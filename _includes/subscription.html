@@ -1,1 +1,22 @@
 <!-- Add your newsletter subscription form here -->
+
+<!--<div class="contact-form">-->
+<!--  <button id="push-button" disabled>Subscribe</button>-->
+<!--</div>-->
+
+<div class="container">
+  <div id="form" class="contact-form">
+    <form accept-charset="UTF-8" method="POST" action="{{ site.sent_message_action_url }}" v-on:submit.prevent="validateBeforeSubmit" ref="contact">
+      <fieldset>
+        <input type="text" name="email" placeholder="{{ site.translations.contact.placeholders.email | default: 'Your email' }}" v-validate="'required|email'"
+               :class="{ 'has-error': errors.has('email') }">
+        <span v-if="errors.has('email')" v-cloak>${ errors.first('email') }</span>
+
+        <span v-if="errors.has('message')" v-cloak>${ errors.first('message') }</span>
+
+        <button type="submit">{{ site.translations.contact.submit_btn | default:  "Send" }}</button>
+      </fieldset>
+    </form>
+  </div>
+
+</div>
